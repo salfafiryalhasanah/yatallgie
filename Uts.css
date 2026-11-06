@@ -421,3 +421,11 @@ border-top: 1px solid rgba(255, 255, 255, .2);
 }
 
 
+@media (max-width: 800px) {
+  .logo, nav, main, .side, .hero div, .hero .truck, .foot div, .row label { display: block; width: 100%; margin: 0 0 16px 0; }
+  nav { text-align: left; }
+  nav a { margin: 0 14px 0 0; }
+  .stamp { width: 47%; }
+  .steps li, .card { width: 100%; margin-right: 0; }
+  .hero h1 { font-size: 2.3rem; }
+}
