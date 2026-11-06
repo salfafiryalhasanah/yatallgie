@@ -1,0 +1,423 @@
+body {
+margin: 0;
+font-family: 'DM Sans', system-ui, sans-serif;
+color: #7a1028;
+background-color: #fdf7ee;
+line-height: 1.55;
+}
+
+h1, h2, h3 {
+font-family: 'Fraunces', Georgia, serif; 
+font-weight: 400; 
+line-height: 1.1; 
+margin: 0 0 .5em; 
+}
+
+h1 { 
+font-size: 2.6rem; 
+}
+
+h2 { 
+font-size: 1.9rem;
+}
+
+h3 { 
+font-size: 1.2rem; 
+}
+
+a { 
+color: #7a1028; 
+}
+
+/* header */
+header {
+background: #fcc9d8;
+padding: 14px 5% 10px;
+border-bottom: 6px dotted #c8282d;
+}
+
+.logo { 
+display: inline-block; 
+width: 30%; 
+vertical-align: middle; 
+font-family: 'Fraunces', serif; f
+ont-weight: 600; 
+font-size: 1.7rem; 
+text-decoration: none; 
+}
+
+nav { 
+display: inline-block; 
+width: 68%; 
+vertical-align: middle; 
+text-align: right; 
+}
+
+nav a { 
+display: inline-block; 
+margin-left: 18px; 
+padding: 4px 0; 
+font-size: .9rem; 
+font-weight: 500; 
+text-decoration: none; 
+border-bottom: 2px solid transparent;
+}
+
+nav a:hover, nav a.on { 
+border-bottom-color: #7a1028; 
+}
+
+/* susunan halaman: isi + sidebar */
+.wrap { 
+width: 90%; 
+margin-left: 5%; 
+padding: 48px 0 64px; 
+}
+
+.tentang p {
+line-height: 1.7;
+margin: 0 0 16px;
+max-width: none;
+}
+
+main {
+display: inline-block; 
+vertical-align: top; 
+width: 69%;  
+}
+
+.side { 
+display: inline-block; 
+vertical-align: top; 
+width: 27%; 
+margin-left: 2%; 
+}
+
+section { 
+margin-bottom: 52px; 
+}
+
+.widget {
+background: #fffaf2; 
+border: 1.5px solid #7a1028; 
+border-radius: 14px; 
+padding: 16px; 
+margin-bottom: 16px; 
+}
+
+.widget h3 {
+background: #fcc9d8; 
+margin: -16px -16px 12px; 
+padding: 10px 16px; 
+border-radius: 12px 12px 0 0; 
+font-size: 1.05rem; 
+}
+
+.widget ul { 
+margin: 0; 
+padding-left: 18px; 
+font-size: .9rem; 
+}
+
+.widget a { 
+display: block; 
+text-decoration: none; 
+padding: 3px 0; 
+}
+
+.widget table { 
+width: 100%; 
+font-size: .88rem; 
+border-collapse: collapse; 
+}
+.widget td { 
+padding: 4px 0; 
+border-bottom: 1px dashed #f0b9c4; 
+}
+
+.widget .kanan { 
+text-align: right; 
+font-weight: 700; 
+}
+
+/* tombol */
+.btn {
+display: inline-block; 
+background: #c3c6ff; 
+color: #7a1028; 
+border: 0; 
+padding: 10px 20px; 
+font: 700 .85rem 'DM Sans', sans-serif; 
+border-radius: 4px; 
+text-decoration: none; 
+}
+
+.btn.red {
+background: #c8282d; 
+color: #fff; 
+}
+
+input.btn {
+width: 180px; 
+}
+
+/* beranda */
+.hero div {
+display: inline-block; 
+vertical-align: 
+top; 
+width: 58%;
+}
+
+.hero .truck { 
+width: 38%; 
+font-size: 7rem; 
+text-align: center; 
+}
+
+.hero h1 {
+font-size: 3rem; 
+}
+
+.sticker { 
+display: inline-block; 
+transform: rotate(-4deg); 
+border: 1.5px solid #7a1028; 
+border-radius: 999px; 
+padding: 4px 14px; 
+font: italic 1rem 'Fraunces', serif; 
+background: #ffb48a; 
+}
+
+.box { 
+background: #c8282d; 
+border: 6px dotted #fdf7ee; 
+outline: 4px solid #c8282d; 
+border-radius: 18px; 
+padding: 22px; 
+margin: 56px 0; 
+}
+
+.inner { 
+background: #fdf7ee; 
+border-radius: 10px; 
+padding: 28px 20px; 
+text-align: center; 
+}
+
+.stamp {
+display: inline-block;
+vertical-align: top;
+width: 47%;
+margin: 18px 2% 0 0;
+border: 1.5px solid #7a1028;
+padding: 14px 8px;
+border-radius: 6px;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+.stamp img {
+display: block;
+width: 100%;
+height: 100px;
+object-fit: cover;
+border-radius: 8px;
+margin-bottom: 8px;
+}
+
+.stamp b { 
+display: block; 
+font-size: 2rem; 
+}
+
+.stamp:hover { 
+background: #fcc9d8; 
+}
+
+.steps {
+list-style: none;
+padding: 0;
+font-size: 0;            
+}
+
+.steps li {
+display: inline-block;
+vertical-align: top;
+width: 23.5%;
+margin: 18px 2% 0 0;
+box-sizing: border-box;
+font-size: 16px;
+border: 1.5px solid #7a1028;
+border-radius: 12px;
+padding: 14px 16px;
+}
+
+.steps li:last-child {
+margin-right: 0;
+}
+/* kartu */
+.card { 
+display: inline-block; 
+vertical-align: top; 
+width: 31%; 
+margin: 0 1.5% 16px 0; 
+background: #fffaf2; 
+border: 1.5px solid #7a1028; 
+border-radius: 14px; 
+padding: 16px; 
+text-decoration: none; 
+}
+
+.card .em { 
+font-size: 2.6rem; 
+background: #fcc9d8; 
+border-radius: 10px; 
+text-align: center; 
+padding: 12px 0; 
+margin-bottom: 8px; 
+}
+
+.card p {
+margin: 6px 0; 
+font-size: .88rem; 
+}
+
+.card .p { 
+font-weight: 700; 
+}
+
+.note { 
+background: #c3c6ff; 
+color: #2b2a6b; 
+padding: 12px 16px; 
+border-radius: 10px; 
+font-size: .9rem; 
+margin: 16px 0; 
+}
+
+/* katalog */
+.pindah a { 
+display: inline-block; 
+margin: 0 8px 8px 0; 
+border: 1.5px solid #7a1028; 
+border-radius: 999px; 
+padding: 6px 14px; 
+text-decoration: none; 
+font-size: .85rem; 
+}
+
+.detail { 
+display: none; 
+background: #fffaf2; 
+border: 1.5px solid #7a1028; 
+border-radius: 16px; 
+padding: 24px; 
+margin-bottom: 40px; 
+}
+
+.detail:target { 
+display: block; 
+}
+
+.detail ul { 
+padding-left: 20px; 
+}
+
+.back a { 
+font-size: .88rem; 
+}
+
+/* form */
+form {
+background: #fffaf2; 
+border: 1.5px solid #7a1028; 
+border-radius: 16px; 
+padding: 22px; 
+margin-bottom: 24px;
+}
+
+label { 
+display: block; 
+margin-bottom: 14px; 
+font-weight: 500; 
+font-size: .88rem; 
+}
+
+input, select, textarea { 
+display: block; 
+width: 100%; 
+margin-top: 4px; 
+font: inherit; 
+padding: 10px 12px; 
+border: 1.5px solid #7a1028; 
+border-radius: 8px; 
+background: #fff; 
+color: #333; 
+}
+
+.row label { 
+display: inline-block; 
+vertical-align: top; 
+width: 47%; 
+margin-right: 2%; 
+
+}
+
+.row input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 6px;
+}
+
+/* footer */
+.check { 
+height: 22px; 
+background: #fcc9d8; 
+border-top: 8px dashed #7a1028; 
+border-bottom: 8px dashed #7a1028; 
+}
+
+footer { 
+background: #7a1028; 
+color: #fdf7ee; 
+}
+
+.foot { 
+width: 90%; 
+margin-left: 5%; 
+padding: 36px 0; 
+font-size: .9rem; 
+}
+
+.foot div { 
+display: inline-block; 
+vertical-align: top; 
+width: 30%; 
+margin-right: 2%; 
+}
+
+footer h3 { 
+color: #fcc9d8; 
+}
+
+footer a { 
+display: block; 
+color: #fdf7ee; 
+text-decoration: none; 
+padding: 2px 0; 
+}
+
+footer a:hover { 
+text-decoration: underline; 
+}
+
+.copy { 
+text-align: center; 
+padding: 14px; 
+font-size: .78rem; 
+border-top: 1px solid rgba(255, 255, 255, .2); 
+}
+
+
