@@ -583,14 +583,14 @@ input[type="submit"] {
 
 
 /* ==== FOTO ==== */
-.foto-sepatu, .foto-obat, .foto-ss, .foto-atasan,
+.foto-sepatu, .foto-obat, .foto-atasan,
 .foto-bawahan, .foto-snack {
     display: flex;
     gap: 15px;
     margin: 20px 0;
 }
 
-.foto-sepatu img, .foto-obat img, .foto-ss img,
+.foto-sepatu img, .foto-obat img,
 .foto-atasan img, .foto-bawahan img,
 .foto-snack img {
     width: 30%;
@@ -598,6 +598,16 @@ input[type="submit"] {
     object-fit: cover;
     border: 2px solid #7a1027;
     border-radius: 12px;
+}
+.foto-ss {
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+.foto-ss img {
+    width: 30%;
+    min-width: 0;
+    box-sizing: border-box;
 }
 /* ===== FOOTER ===== */
 .check {
@@ -652,23 +662,19 @@ footer { background: #7a1027; color: #ffc9d9; }
         grid-template-columns: 1fr;
         padding: 20px 14px;
     }
-
     .wrap > main {
         grid-column: 1;
         grid-row: auto;
         order: 1;
     }
-
     .wrap > .side,
     .wrap > .widget {
         grid-column: 1;
         order: 2;
     }
-
     .side {
         position: static;
     }
-
     .hero {
         grid-template-columns: 1fr;
     }
