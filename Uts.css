@@ -600,13 +600,20 @@ input[type="submit"] {
     border-radius: 12px;
 }
 .foto-ss {
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
     width: 100%;
     box-sizing: border-box;
+    margin: 20px 0;
 }
+
 .foto-ss img {
-    width: 30%;
+    width: 14%;
     min-width: 0;
+    flex-shrink: 1;
+    height: 180px;
+    object-fit: contain;
     box-sizing: border-box;
 }
 /* ===== FOOTER ===== */
