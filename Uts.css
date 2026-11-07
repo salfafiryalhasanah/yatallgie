@@ -657,43 +657,22 @@ footer { background: #7a1027; color: #ffc9d9; }
 }
  
 /* ===== RESPONSIVE BIAR BISA DI HP ===== */
-@media (max-width: 860px) {
-header { 
-    flex-direction: column; 
-    gap: 8px; 
-    padding: 12px 16px 24px; 
+@media (max-width: 1024px) {
+    body { margin: 0; }
+    header { position: static; flex-direction: column; gap: 8px; padding: 12px 16px 24px; }
+    nav { justify-content: center; gap: 2px; }
+    nav a { font-size: 10px; letter-spacing: 0; padding: 6px 7px; }
+    .wrap { grid-template-columns: 1fr; padding: 20px 14px; }
+    .wrap > main { grid-column: 1; grid-row: auto; order: 1; }
+    .wrap > .side, .wrap > .widget { grid-column: 1; order: 2; }
+    .side { position: static; }
+    #sapaan { font-size: 30px; }
+    .hero { grid-template-columns: 1fr; }
+    .promo-area { margin: 0; padding: 0; }
+    .stamps { grid-template-columns: 1fr 1fr; }
+    .steps, .grid, .foot { grid-template-columns: 1fr; }
+    .foto-sepatu img, .foto-obat img, .foto-ss img,
+    .foto-atasan img, .foto-bawahan img, .foto-snack img { width: calc(50% - 12px); height: 140px; }
+    .row { flex-direction: column; gap: 0; }
+    .row label { width: 100%; margin-right: 0; }
 }
-.wrap { 
-    grid-template-columns: 1fr; 
-    padding: 20px 14px; 
-}
-.wrap > main { 
-    grid-column: 1; 
-    grid-row: auto; 
-    order: 1; 
-}
-.wrap > .side, .wrap > .widget { 
-    grid-column: 1; 
-    order: 2; }
-
-.side { 
-    position: static; 
-}
-.hero { 
-    grid-template-columns: 1fr; 
-}
-.hero h1 { 
-    font-size: 38px; 
-}
-.truck { 
-    font-size: 110px; 
-}
-.row { 
-    flex-direction: column; 
-    gap: 0; 
-}
-.foot { grid-template-columns: 1fr; 
-}
-}
-
-
