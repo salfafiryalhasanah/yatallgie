@@ -642,22 +642,42 @@ footer { background: #7a1027; color: #ffc9d9; }
 }
  
 /* ===== RESPONSIVE BIAR BISA DI HP ===== */
+/* ===== RESPONSIVE BIAR BISA DI HP ===== */
 @media (max-width: 700px) {
     html, body { margin: 0; max-width: 100%; overflow-x: hidden; }
     header { position: static; flex-direction: column; gap: 8px; padding: 12px 16px 24px; }
+    .logo { font-size: 24px; }
     nav { justify-content: center; gap: 2px; }
     nav a { font-size: 10px; letter-spacing: 0; padding: 6px 7px; }
     .wrap { grid-template-columns: 1fr; padding: 20px 14px; }
     .wrap > main { grid-column: 1; grid-row: auto; order: 1; }
     .wrap > .side, .wrap > .widget { grid-column: 1; order: 2; }
     .side { position: static; }
-    #sapaan { font-size: 30px; }
-    .hero { grid-template-columns: 1fr; }
+    h1, #sapaan { font-size: 30px; }
+    h2 { font-size: 24px; }
+    section { margin-bottom: 32px; }
+    .hero { grid-template-columns: 1fr; gap: 10px; padding: 16px 0 24px; }
+    .truck { font-size: 90px; padding: 24px 10px 10px; }
+    .sticker { font-size: 13px; padding: 6px 12px; }
     .promo-area { margin: 0; padding: 0; }
-    .stamps { grid-template-columns: 1fr 1fr; }
-    .steps, .grid, .foot { grid-template-columns: 1fr; }
+    .promo h2 { font-size: 30px; }
+    .box { padding: 14px; border-radius: 18px; }
+    .inner { padding: 30px 12px 18px; }
+    .stamps { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .stamp { padding: 8px; font-size: 13px; }
+    .stamp img { height: 80px; }
+    .steps { grid-template-columns: 1fr; gap: 22px; }
+    .grid { grid-template-columns: 1fr; }
+    .tentang-wrap { padding: 16px; }
+    .tentang-wrap .grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .tentang-wrap .card { padding: 12px 8px; }
+    .detail { padding: 18px; }
     .foto-sepatu img, .foto-obat img, .foto-ss img,
     .foto-atasan img, .foto-bawahan img, .foto-snack img { width: calc(50% - 12px); height: 140px; }
-    .row { flex-direction: column; gap: 0; }
+    form { padding: 16px; }
+    .row { flex-direction: column; gap: 0; margin-bottom: 0; }
     .row label { width: 100%; margin-right: 0; }
+    input, select, textarea { font-size: 16px; }
+    input[type="submit"] { width: 100%; }
+    .foot { grid-template-columns: 1fr; padding: 28px 18px 16px; }
 }
