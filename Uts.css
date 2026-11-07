@@ -583,14 +583,15 @@ input[type="submit"] {
 
 
 /* ==== FOTO ==== */
-.foto-sepatu, .foto-obat, .foto-atasan,
+.foto-sepatu, .foto-obat, .foto-ss, .foto-atasan,
 .foto-bawahan, .foto-snack {
     display: flex;
+    flex-wrap: wrap;   /* tambahan */
     gap: 15px;
     margin: 20px 0;
 }
 
-.foto-sepatu img, .foto-obat img,
+.foto-sepatu img, .foto-obat img, .foto-ss img,
 .foto-atasan img, .foto-bawahan img,
 .foto-snack img {
     width: 30%;
@@ -599,23 +600,7 @@ input[type="submit"] {
     border: 2px solid #7a1027;
     border-radius: 12px;
 }
-.foto-ss {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin: 20px 0;
-}
 
-.foto-ss img {
-    width: 14%;
-    min-width: 0;
-    flex-shrink: 1;
-    height: 180px;
-    object-fit: contain;
-    box-sizing: border-box;
-}
 /* ===== FOOTER ===== */
 .check {
     height: 24px;
@@ -657,13 +642,4 @@ footer { background: #7a1027; color: #ffc9d9; }
 }
  
 /* ===== RESPONSIVE BIAR BISA DI HP ===== */
-@media (max-width: 800px) {
-  header { display: block; width: 100%; }
-  .logo, nav, main, .side, .hero div, .hero .truck, .foot div, .row label { display: block; width: 100%; margin: 0 0 16px 0; }
-  nav { text-align: left; }
-  nav a { margin: 0 14px 0 0; }
-  .side { display: none; }
-  .stamp { width: 47%; }
-  .steps li, .card { width: 100%; margin-right: 0; }
-  img { max-width: 100%; }
-}
+
