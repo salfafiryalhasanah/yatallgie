@@ -643,93 +643,330 @@ footer { background: #7a1027; color: #ffc9d9; }
  
 /* ===== RESPONSIVE BIAR BISA DI HP ===== */
 
-/* ===== RESPONSIVE ===== */
 
-/* Tablet & HP */
-@media (max-width: 800px) {
+/* ===== RESPONSIVE TABLET ===== */
+@media screen and (max-width: 800px) {
 
-  /* Header */
-  header {
-    position: static;            /* sticky makan tempat di HP */
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-    padding: 14px 16px 22px;
-  }
-  nav { gap: 4px; }
-  nav a { padding: 6px 12px; }
+    /* HEADER */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 20px 22px;
+        gap: 12px;
+    }
 
-  /* Layout utama: 1 kolom */
-  .wrap {
-    grid-template-columns: 1fr;
-    padding: 20px 16px;
-  }
-  .wrap > main,
-  .wrap > .side,
-  .wrap > .widget {
-    grid-column: 1;
-    grid-row: auto;
-  }
-  .side { position: static; }
+    .logo {
+        font-size: 25px;
+    }
 
-  /* Promo */
-  .promo-area {
-    margin: 10px 0 0;
-    padding: 0 16px;
-  }
+    nav {
+        justify-content: center;
+        gap: 5px;
+    }
 
-  /* Hero */
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 20px 0 30px;
-    text-align: center;
-  }
-  .hero h1,
-  h1,
-  #sapaan { font-size: 2.2rem; }
-  .truck { font-size: 90px; padding: 20px 10px; }
+    nav a {
+        font-size: 11px;
+        padding: 7px 10px;
+    }
 
-  /* Form */
-  .row { flex-direction: column; gap: 0; margin-bottom: 0; }
-  .row label { width: 100%; margin-right: 0; }
+    /* LAYOUT */
+    .wrap {
+        grid-template-columns: 1fr;
+        padding: 25px 20px;
+        gap: 20px;
+    }
 
-  /* Foto: 2 kolom */
-  .foto-sepatu img, .foto-obat img, .foto-ss img,
-  .foto-atasan img, .foto-bawahan img, .foto-snack img {
-    width: calc(50% - 8px);
-    height: 150px;
-  }
+    .wrap > main,
+    .wrap > .side,
+    .wrap > .widget {
+        grid-column: 1;
+        grid-row: auto;
+        width: 100%;
+    }
 
-  /* Footer */
-  .foot {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 30px 16px 16px;
-  }
+    .side {
+        position: static;
+    }
+
+    /* HERO */
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 25px 5px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .truck {
+        font-size: 110px;
+        padding: 20px;
+    }
+
+    /* PROMO */
+    .promo-area {
+        width: 100%;
+        margin: 15px auto;
+        padding: 0;
+    }
+
+    .promo {
+        width: 100%;
+    }
+
+    /* STAMP */
+    .stamps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stamp {
+        width: 100%;
+    }
+
+    /* CARD */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FOTO */
+    .foto-sepatu img,
+    .foto-obat img,
+    .foto-ss img,
+    .foto-atasan img,
+    .foto-bawahan img,
+    .foto-snack img {
+        width: calc(50% - 8px);
+    }
+
+    /* FOOTER */
+    .foot {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 30px 20px;
+    }
 }
 
-/* HP kecil */
-@media (max-width: 480px) {
-  body { font-size: 14px; }
-  h2 { font-size: 24px; }
 
-  .box { padding: 14px; }
-  .inner { padding: 32px 14px 20px; }
-  .stamps { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+/* ===== RESPONSIVE HP ===== */
+@media screen and (max-width: 600px) {
 
-  .steps, .grid { grid-template-columns: 1fr; }
+    body {
+        font-size: 14px;
+        background-size: 25px 25px;
+    }
 
-  .promo h2 { font-size: 28px; }
-  .promo-buttons { flex-wrap: wrap; }
+    /* HEADER */
+    header {
+        padding: 12px 12px 20px;
+    }
 
-  .tentang-wrap, .detail, form { padding: 16px; }
+    .logo {
+        font-size: 23px;
+    }
 
-  /* 16px supaya iPhone tidak zoom otomatis saat input difokus */
-  input, select, textarea { font-size: 16px; }
+    nav {
+        justify-content: center;
+        gap: 3px;
+    }
 
-  .foto-sepatu img, .foto-obat img, .foto-ss img,
-  .foto-atasan img, .foto-bawahan img, .foto-snack img {
-    width: 100%;
-    height: 200px;
-  }
+    nav a {
+        font-size: 10px;
+        padding: 6px 9px;
+        letter-spacing: .5px;
+    }
+
+    /* JUDUL */
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    #sapaan {
+        font-size: 34px;
+    }
+
+    /* WRAP */
+    .wrap {
+        padding: 18px 12px;
+        gap: 15px;
+    }
+
+    /* WIDGET */
+    .widget {
+        padding: 15px;
+    }
+
+    /* HERO */
+    .hero {
+        padding: 20px 0 30px;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .truck {
+        font-size: 85px;
+    }
+
+    .sticker {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    /* PROMO */
+    .promo-area {
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    .promo {
+        padding: 15px 12px;
+    }
+
+    .promo strong {
+        font-size: 17px;
+    }
+
+    .promo h2 {
+        font-size: 29px;
+    }
+
+    .promo p {
+        font-size: 12px;
+    }
+
+    .promo-buttons {
+        flex-wrap: wrap;
+    }
+
+    /* BOX NEGARA */
+    .box {
+        padding: 15px;
+        border-radius: 18px;
+    }
+
+    .inner {
+        padding: 30px 12px 20px;
+    }
+
+    .stamps {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .stamp {
+        padding: 9px;
+        font-size: 13px;
+    }
+
+    .stamp img {
+        height: 85px;
+    }
+
+    .stamp b {
+        font-size: 18px;
+    }
+
+    /* STEPS */
+    .steps {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .steps li {
+        width: 100%;
+    }
+
+    /* CARD */
+    .tentang-wrap {
+        padding: 15px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .card {
+        padding: 12px 8px;
+    }
+
+    .card .em {
+        font-size: 30px;
+    }
+
+    /* KATALOG */
+    .pindah {
+        gap: 6px;
+    }
+
+    .pindah a {
+        font-size: 12px;
+        padding: 6px 11px;
+    }
+
+    .detail {
+        padding: 17px;
+    }
+
+    /* FORM */
+    form {
+        padding: 16px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 10px;
+    }
+
+    .row label {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    input, select, textarea {
+        font-size: 13px;
+    }
+
+    /* FOTO PRODUK */
+    .foto-sepatu img,
+    .foto-obat img,
+    .foto-ss img,
+    .foto-atasan img,
+    .foto-bawahan img,
+    .foto-snack img {
+        width: calc(50% - 8px);
+        height: 130px;
+    }
+
+    /* BUTTON */
+    .btn {
+        font-size: 11px;
+        padding: 8px 13px;
+    }
+
+    /* FOOTER */
+    .foot {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 25px 18px;
+        font-size: 13px;
+    }
+
+    .copy {
+        font-size: 11px;
+    }
+
 }
+
